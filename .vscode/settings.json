@@ -31,5 +31,6 @@
     "DRIVECONTROLLER",
     "teleop",
     "teleoperated"
-  ]
+  ],
+  "wpilib.selectDefaultSimulateExtension": true
 }
