@@ -27,13 +27,13 @@ import frc.robot.subsystems.Spinner;
  */
 public class RobotContainer {
   // The robot's subsystems and commands are defined here...
-  private final DriveSubsystem m_driveSubsystem = new DriveSubsystem();
-  private final Spinner m_spinner = new Spinner();
+  private final DriveSubsystem m_driveSubsystem = new DriveSubsystem(); // Inits drivesystem
+  private final Spinner m_spinner = new Spinner(); // Inits spinner
 
   /**
    * The container for the robot.  Contains subsystems, OI devices, and commands.
    */
-  private XboxController m_driveController = new XboxController(DriveConstants.DRIVECONTROLLER_ID);
+  private XboxController m_driveController = new XboxController(DriveConstants.DRIVECONTROLLER_ID); // Creates controller
 
   public RobotContainer() {
     // Configure the button bindings
@@ -52,7 +52,7 @@ public class RobotContainer {
    * {@link edu.wpi.first.wpilibj2.command.button.JoystickButton}.
    */
   private void configureButtonBindings() {
-    new Trigger(m_driveController::getRightBumperPressed).onTrue(new Spin(m_spinner));
+    // new Trigger(m_driveController::getRightBumperPressed).onTrue(new Spin(m_spinner));
   }
 
 
