@@ -24,10 +24,10 @@ public class Spinner extends SubsystemBase {
   public void setPercentOutput(double speed) {
     if (speed > 0.2) {
       speed = 0.2;
-    }
+    } // Max speed 0.2
     if ( speed < -0.2) {
       speed = -0.2;
-    }
+    } // Min speed
     spinnerMotor.set(speed);
   }
 }
